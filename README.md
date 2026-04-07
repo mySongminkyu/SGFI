@@ -2,7 +2,7 @@
 
 PyTorch implementation of "Scribble-Supervised Multi-Modal Salient Object Detection via Semantics-Guided Feature Injection and Prototype Supervision".
 
-This repository covers four modality settings: RGB, RGB-D, RGB-T, and V-D-T. Each subdirectory has its own training and testing scripts. The example below uses the RGB-D setting.
+This repository contains the RGB-D code as a representative example. The full code for all four modality settings (RGB, RGB-D, RGB-T, V-D-T) is available at the Google Drive link below.
 
 ## Resources
 
