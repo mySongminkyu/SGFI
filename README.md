@@ -4,6 +4,11 @@ PyTorch implementation of "Scribble-Supervised Multi-Modal Salient Object Detect
 
 This repository contains the RGB-D code as a representative example. The full code for all four modality settings (RGB, RGB-D, RGB-T, V-D-T) is available at the Google Drive link below.
 
+## Overview
+
+![Architecture](./figures/architecture.png)
+
+
 ## Resources
 
 - Full code (all modalities): [Google Drive](https://drive.google.com/drive/folders/1tc3Dejb2zIy6QX4ugHsvlvvXVBg7QP8C?usp=drive_link)
