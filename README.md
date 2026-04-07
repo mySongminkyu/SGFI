@@ -11,7 +11,7 @@ This repository contains the RGB-D code as a representative example. The full co
 - Trained checkpoints: [Google Drive](https://drive.google.com/drive/folders/1bBC0W-sl9r3bLRSATfq5Ie2yeRXXAg9h?usp=drive_link)
 - Saliency maps: [Google Drive](https://drive.google.com/drive/folders/1aFDmHOWtE9AHHwceMUiN0M3SD9XYo1qw?usp=drive_link)
 - Evaluation code: [Google Drive](https://drive.google.com/drive/folders/1kLwBIKJlMd70NOcfd8_VOjQ9zE5VL8fC?usp=drive_link)
-- SAM2 pretrained weights: [Official SAM2 repository](https://github.com/facebookresearch/sam2)
+- SAM2 pretrained weights: [Official SAM2 repository](https://github.com/facebookresearch/sam2) (download `sam2.1_hiera_large.pt`)
 
 ## Environment
 ```bash
