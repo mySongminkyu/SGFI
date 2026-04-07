@@ -2,12 +2,7 @@
 
 PyTorch implementation of "Scribble-Supervised Multi-Modal Salient Object Detection via Semantics-Guided Feature Injection and Prototype Supervision".
 
-This repository covers four modality settings:
-
-- [RGB](./RGB)
-- [RGB-D](./RGBD)
-- [RGB-T](./RGBT)
-- [V-D-T](./VDT)
+This repository covers four modality settings: RGB, RGB-D, RGB-T, and V-D-T. Each subdirectory has its own training and testing scripts. The example below uses the RGB-D setting.
 
 ## Resources
 
@@ -18,7 +13,6 @@ This repository covers four modality settings:
 - SAM2 pretrained weights: [Official SAM2 repository](https://github.com/facebookresearch/sam2)
 
 ## Environment
-
 ```bash
 conda create -n sgfi python=3.10 -y
 conda activate sgfi
@@ -26,32 +20,25 @@ pip install torch==2.7.1 torchvision==0.22.1 torchaudio==2.7.1 --index-url https
 pip install -r requirements.txt
 ```
 
-
-## Usage
-
-See each subdirectory for training and testing instructions.
-
-RGB/README.md
-markdown# SGFI - RGB
-
 ## Setup
 
 Place files as follows:
 ```
 checkpoints/
 ├── sam2.1_hiera_large.pt
-└── RGB_model.pth
+└── RGBD_model.pth
 
 data/
 ├── train_data/
 │   ├── img/
+│   ├── depth/
 │   ├── gt/
 │   ├── mask/
 │   └── gray/
 └── test_data/
-    ├── DUTS-TE/
-    │   ├── images/
-    │   └── segmentations/
+    ├── NJU2K/
+    ├── NLPR/
+    ├── STERE/
     └── ...
 ```
 
@@ -62,7 +49,7 @@ python train.py \
     --sam2_ckpt ./checkpoints/sam2.1_hiera_large.pt \
     --train_RGBD_dir ./data \
     --val_RGBD_dir ./data \
-    --val_sets DUTS-TE \
+    --val_sets NJU2K \
     --save_path ./output \
     --use_high_res_features \
     --use_edge_fusion_step1 \
@@ -76,7 +63,7 @@ python test.py \
     --data_dir ./data \
     --save_dir ./output \
     --sam2_ckpt ./checkpoints/sam2.1_hiera_large.pt \
-    --weights ./checkpoints/RGB_model.pth \
+    --weights ./checkpoints/RGBD_model.pth \
     --use_high_res_features \
     --use_edge_fusion_step1 \
     --use_edge_fusion_step2
