@@ -6,6 +6,7 @@ This repository contains the RGB-D code as a representative example. The full co
 
 ## Resources
 
+- Full code (all modalities): [Google Drive](https://drive.google.com/drive/folders/1tc3Dejb2zIy6QX4ugHsvlvvXVBg7QP8C?usp=drive_link)
 - Datasets: [Google Drive](https://drive.google.com/drive/folders/1t1sYnhiIXSaO-Xu2OpPESK7NLWGpXxqx?usp=drive_link)
 - Trained checkpoints: [Google Drive](https://drive.google.com/drive/folders/1bBC0W-sl9r3bLRSATfq5Ie2yeRXXAg9h?usp=drive_link)
 - Saliency maps: [Google Drive](https://drive.google.com/drive/folders/1aFDmHOWtE9AHHwceMUiN0M3SD9XYo1qw?usp=drive_link)
