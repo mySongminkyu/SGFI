@@ -30,16 +30,16 @@ checkpoints/
 
 data/
 ├── train_data/
-│   ├── img/
 │   ├── depth/
+│   ├── gray/
 │   ├── gt/
-│   ├── mask/
-│   └── gray/
+│   ├── gt_mask/
+│   ├── img/
+│   └── mask/
 └── test_data/
-    ├── NJU2K/
-    ├── NLPR/
-    ├── STERE/
-    └── ...
+    ├── depth/
+    ├── gray/
+    └── img/
 ```
 
 ## Training
@@ -49,7 +49,6 @@ python train.py \
     --sam2_ckpt ./checkpoints/sam2.1_hiera_large.pt \
     --train_RGBD_dir ./data \
     --val_RGBD_dir ./data \
-    --val_sets NJU2K \
     --save_path ./output \
     --use_high_res_features \
     --use_edge_fusion_step1 \
