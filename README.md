@@ -4,7 +4,7 @@ This repository contains the RGB-D code as a representative example. The full co
 
 ## Overview
 
-![Architecture](./figures/architecture.png)
+![Architecture](./figures/architecture.pdf)
 
 
 ## Resources
